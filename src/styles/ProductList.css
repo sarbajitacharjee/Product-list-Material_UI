@@ -1,48 +1,55 @@
+/* Styles for the product card container */
 .product-card {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: transform 0.2s;
-  }
-  
-  .product-card:hover {
-    transform: scale(1.05);
-  }
-  
-  .card-content {
-    flex-grow: 1;
-  }
-  
-  .product-image {
-    object-fit: contain;
-  }
-  
-  .product-title {
-    height: 60px; /* Adjust height as needed */
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-  }
-  
-  .product-description {
-    height: 100px; /* Adjust height as needed */
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-  }
-  
-  .product-price {
-    margin-top: 10px;
-  }
-  
-  body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    background-color: #f0f0f0;
-  }
-  
+  height: 100%; /* Ensure the card takes up the full height of its container */
+  display: flex; /* Use flexbox layout */
+  flex-direction: column; /* Arrange children in a column */
+  justify-content: space-between; /* Distribute space between children */
+  transition: transform 0.2s; /* Smooth transition for transform property */
+}
+
+/* Transform the card slightly when hovered over */
+.product-card:hover {
+  transform: scale(1.05); /* Scale the card up by 5% */
+}
+
+/* Styles for the content section of the card */
+.card-content {
+  flex-grow: 1; /* Allow the content section to grow and fill available space */
+}
+
+/* Ensure the product image fits within its container */
+.product-image {
+  object-fit: contain; /* Scale the image to fit its container without distortion */
+}
+
+/* Styles for the product title */
+.product-title {
+  height: 60px; /* Set a fixed height for the title */
+  overflow: hidden; /* Hide overflow content */
+  text-overflow: ellipsis; /* Add ellipsis (...) for overflow text */
+  display: -webkit-box; /* Use WebKit-specific box layout */
+  -webkit-line-clamp: 2; /* Limit text to 2 lines */
+  -webkit-box-orient: vertical; /* Arrange lines vertically */
+}
+
+/* Styles for the product description */
+.product-description {
+  height: 100px; /* Set a fixed height for the description */
+  overflow: hidden; /* Hide overflow content */
+  text-overflow: ellipsis; /* Add ellipsis (...) for overflow text */
+  display: -webkit-box; /* Use WebKit-specific box layout */
+  -webkit-line-clamp: 4; /* Limit text to 4 lines */
+  -webkit-box-orient: vertical; /* Arrange lines vertically */
+}
+
+/* Styles for the product price */
+.product-price {
+  margin-top: 10px; /* Add space above the price */
+}
+
+/* Global body styles */
+body {
+  margin: 0; /* Remove default margin */
+  font-family: 'Roboto', sans-serif; /* Set default font */
+  background-color: #f0f0f0; /* Light grey background color */
+}
